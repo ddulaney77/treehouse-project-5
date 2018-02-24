@@ -1,0 +1,34 @@
+// use for
+
+//create variables for repeated values
+
+//at min create variables for fonts, breakpoints and colors
+
+//import this partial into your utilities/index.scss file
+
+
+//font variables
+
+
+
+
+
+//breakpoint variables
+
+$break -xs : 480px;
+$break -s : 575px;
+$break -m : 768px;
+$break -l:  992px;
+
+//color variables
+
+
+$ui-colors: (
+default: $fountain-blue,
+success:$emerald,
+error: $sunglo,
+warning: $coral,
+info: $purple-majesty,);
+
+
+)
