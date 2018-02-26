@@ -1,1 +1,15 @@
 
+//import partials
+
+@import "base/index";
+@import "utilities/index";
+@import "components/index";
+
+
+
+
+
+.btn {
+@include bg-colors(ui-colors);
+
+}
