@@ -8,31 +8,34 @@
 
 
 //font variables
-
+//font path
 
 
 
 
 //breakpoint variables
 
-$break -xs : 480px;
-$break -s : 575px;
-$break -m : 768px;
-$break -l:  992px;
-
+/*
+$break-xs : 480px;
+$break-s : 575px;
+$break-m : 768px;
+$break-l:  992px;
+*/
 //color variables
 
-$primary-color: teal;
-$secondary-color: ;
-
-//buttons
-
-$ui-colors: (
-default: $fountain-blue,
-success:$emerald,
-error: $sunglo,
-warning: $coral,
-info: $purple-majesty,);
+//$color-primary: #278da4;
+//$color-secondary: #b13c69;
+//$color-accent: #eeea72;
 
 
-)
+
+
+//button colors
+
+
+/*$lightskyblue: #87cefa;
+$lightgreen: #90ee90;
+$tomato:#ff6347;
+$lightsalmon: #ffa07a;
+$mediumpurple: #9370db;
+*/

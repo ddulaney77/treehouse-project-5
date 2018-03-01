@@ -1,6 +1,31 @@
-Typography:
-.container
+//Typography:
+
+
+.container {
+  display:flex;
+  flex-wrap: wrap;
+  color: #343434;
+  font-size: 1rem;
+  line-height: 1.5;
+  margin: 0;
+  //@media(min-width: $break-m){
+    //@include $center(90%);
+    }
+  }
+
+
 .link
+
+
 .blockquote
-.headline--primary
+
+
+.headline--primary {
+  font-size: 20px;
+}
+// web fonts
+
+
+
+
 .headline--secondary
