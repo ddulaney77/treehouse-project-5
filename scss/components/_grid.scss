@@ -1,16 +1,53 @@
 //Grid:
-.container
-.grid__row
-.grid__col--2
-.grid__col--3
-.grid__col--4
-.grid__col--5
-.grid__col--6
-.grid__col--7
-.grid__col--8
-.grid__col--9
-.grid__col--10
-.grid__col--11
-.grid__col--12
-.centered
-.theme__colors
+
+.container {
+  @include flexy(flex,row,wrap,space-between){
+
+  }
+
+}
+.grid__row {
+
+}
+.grid__col--2{
+
+
+}
+.grid__col--3{
+
+}
+.grid__col--4{
+  background-color: $lightskyblue;
+
+}
+.grid__col--5{
+  background-color: $lightgreen;
+
+}
+.grid__col--6 {
+  background-color: $color-primary;
+
+}
+.grid__col--7{
+  background-color: $tomato;
+
+}
+.grid__col--8{
+  background-color: $lightsalmon;
+
+}
+.grid__col--9{
+
+}
+.grid__col--10{
+
+}
+.grid__col--12{
+  background-color: $lightgreen;
+}
+.centered{
+
+}
+.theme__colors{
+
+}

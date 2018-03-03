@@ -1,15 +1,12 @@
 //Navigation:
 
 .nav {
-margin-top: em(20px);
-margin-bottom: em(30px);
+  @include flexy($dir:row, $just: space-between){
+}
   &__item {
-  display: inline-block;
+
   text-align: center;
   color: black;
-  font-size: 1.2em;
   display: block;
 }
-
-  margin: 0 em(12px);
 }

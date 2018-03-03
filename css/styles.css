@@ -1,29 +1,17 @@
 /*
-Error: Invalid CSS after ".form__input": expected "{", was ""
-        on line 11 of scss/components/_forms.scss
-        from line 4 of scss/components/_index.scss
-        from line 9 of scss/styles.scss
-
-6:   visability: hidden;
-7: }
-8: 
-9: 
-10: .form__input
+Errno::ENOSPC: No space left on device @ fptr_finalize - .sass-cache/5b4e064e3dfdf9cbf65472d1f4ee589ad5bade7e/_buttons.scssc20180302-43483-gkzihx
 
 Backtrace:
-scss/components/_forms.scss:11
-scss/components/_index.scss:4
-scss/styles.scss:9
-/Library/Ruby/Gems/2.3.0/gems/sass-3.5.5/lib/sass/scss/parser.rb:1278:in `expected'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.5.5/lib/sass/scss/parser.rb:1208:in `expected'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.5.5/lib/sass/scss/parser.rb:1203:in `tok!'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.5.5/lib/sass/scss/parser.rb:677:in `block'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.5.5/lib/sass/scss/parser.rb:670:in `ruleset'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.5.5/lib/sass/scss/parser.rb:696:in `block_child'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.5.5/lib/sass/scss/parser.rb:689:in `block_contents'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.5.5/lib/sass/scss/parser.rb:137:in `stylesheet'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.5.5/lib/sass/scss/parser.rb:41:in `parse'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.5.5/lib/sass/engine.rb:414:in `_to_tree'
+/System/Library/Frameworks/Ruby.framework/Versions/2.3/usr/lib/ruby/2.3.0/tempfile.rb:150:in `close'
+/System/Library/Frameworks/Ruby.framework/Versions/2.3/usr/lib/ruby/2.3.0/tempfile.rb:150:in `_close'
+/System/Library/Frameworks/Ruby.framework/Versions/2.3/usr/lib/ruby/2.3.0/tempfile.rb:161:in `close'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.5.5/lib/sass/util.rb:1012:in `atomic_create_and_write_file'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.5.5/lib/sass/cache_stores/filesystem.rb:39:in `_store'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.5.5/lib/sass/cache_stores/base.rb:51:in `store'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.5.5/lib/sass/cache_stores/chain.rb:19:in `block in store'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.5.5/lib/sass/cache_stores/chain.rb:19:in `each'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.5.5/lib/sass/cache_stores/chain.rb:19:in `store'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.5.5/lib/sass/engine.rb:425:in `_to_tree'
 /Library/Ruby/Gems/2.3.0/gems/sass-3.5.5/lib/sass/engine.rb:321:in `to_tree'
 /Library/Ruby/Gems/2.3.0/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:327:in `block in visit_import'
 /Library/Ruby/Gems/2.3.0/gems/sass-3.5.5/lib/sass/stack.rb:88:in `block in with_import'
@@ -82,4 +70,4 @@ scss/styles.scss:9
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Invalid CSS after \".form__input\": expected \"{\", was \"\"\A         on line 11 of scss/components/_forms.scss\A         from line 4 of scss/components/_index.scss\A         from line 9 of scss/styles.scss\A \A 6:   visability: hidden;\A 7: }\A 8: \A 9: \A 10: .form__input"; }
+  content: "Errno::ENOSPC: No space left on device @ fptr_finalize - .sass-cache/5b4e064e3dfdf9cbf65472d1f4ee589ad5bade7e/_buttons.scssc20180302-43483-gkzihx"; }

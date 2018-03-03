@@ -13,7 +13,7 @@
 //web fonts
 
 
-/*
+
 @mixin center($w) {
 width: $w;
 max-width:$max-width;
@@ -21,9 +21,9 @@ margin-left: auto;
 margin-right: auto;
 }
 
-@mixin flexy($flex, $wrap, $just) {
-    display: $flex;
+@mixin flexy($disp:flex, $dir: null, $wrap: null, $just: null,) {
+    display: $disp;
+    flex-direction: $dir;
     flex-wrap: $wrap;
     justify-content: $just;
 }
-*/

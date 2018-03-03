@@ -1,7 +1,9 @@
 //Image:
 
 
-.img--logo
+.img--logo{
+
+}
 
 
 
@@ -10,11 +12,16 @@
   border: 4px solid white;
   margin-top: 75px;
 
-  @media(max-width:$break-xs)
+  //@media(max-width:$break-xs)
 
 
 }
 
 
 
-.img--avatar
+.img--avatar{
+  @include flexy($just: right){
+    
+  }
+
+}
