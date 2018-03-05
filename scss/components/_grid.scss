@@ -1,53 +1,124 @@
 //Grid:
 
 .container {
-  @include flexy(flex,row,wrap,space-between){
+@include flexy($dir:column){
 
-  }
+}
+  width:90%;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
 
 }
 .grid__row {
+  background-color: transparent;
+  width:90%;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
 
 }
 .grid__col--2{
 
 
+  width:90%;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+
 }
+
 .grid__col--3{
 
+  width:90%;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+
 }
+
 .grid__col--4{
   background-color: $lightskyblue;
+  width:90%;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
 
 }
+
 .grid__col--5{
   background-color: $lightgreen;
+  width:90%;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
 
 }
+
 .grid__col--6 {
   background-color: $color-primary;
+  width:90%;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
 
 }
+
 .grid__col--7{
   background-color: $tomato;
+  width:90%;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
 
 }
+
 .grid__col--8{
   background-color: $lightsalmon;
+  width:90%;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
 
 }
+
 .grid__col--9{
+  width:90%;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
 
 }
+
 .grid__col--10{
+  width:90%;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
 
 }
+
 .grid__col--12{
+  width:90%;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
   background-color: $lightgreen;
 }
+
 .centered{
+  width:90%;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
 
 }
+
+
 .theme__colors{
+  width:90%;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
 
 }

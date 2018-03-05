@@ -1,0 +1,77 @@
+//Buttons:
+
+.btn {
+width: 100%;
+padding: .8em;
+border-radius: 5px;
+border: none;
+font-size: 1em;
+color: white;
+text-transform: uppercase;
+margin-bottom: 1em;
+}
+.btn--default{
+  background-color:$lightskyblue ;
+  width: 100%;
+  padding: .8em;
+  border-radius: 5px;
+  border: none;
+  font-size: 1em;
+  color: white;
+  text-transform: uppercase;
+  margin-bottom: 1em;
+}
+.btn--success{
+  background-color:$lightgreen ;
+  width: 100%;
+  padding: .8em;
+  border-radius: 5px;
+  border: none;
+  font-size: 1em;
+  color: white;
+  text-transform: uppercase;
+  margin-bottom: 1em;
+}
+.btn--error{
+  background-color:$tomato;
+  width: 100%;
+  padding: .8em;
+  border-radius: 5px;
+  border: none;
+  font-size: 1em;
+  color: white;
+  text-transform: uppercase;
+  margin-bottom: 1em;
+}
+.btn--warning{
+  background-color: $lightsalmon;
+  width: 100%;
+  padding: .8em;
+  border-radius: 5px;
+  border: none;
+  font-size: 1em;
+  color: white;
+  text-transform: uppercase;
+  margin-bottom: 1em;
+}
+.btn--info{
+  background-color: $mediumpurple;
+  width: 100%;
+  padding: .8em;
+  border-radius: 5px;
+  border: none;
+  font-size: 1em;
+  color: white;
+  text-transform: uppercase;
+  margin-bottom: 1em;
+}
+.theme__colors{
+  width: 100%;
+  padding: .8em;
+  border-radius: 5px;
+  border: none;
+  font-size: 1em;
+  color: white;
+  text-transform: uppercase;
+  margin-bottom: 1em;
+}

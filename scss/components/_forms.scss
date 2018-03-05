@@ -1,14 +1,18 @@
 //Forms:
 .form {
-  
+  @include flexy($dir:column,){
+  }
+
 }
 
 
 .form__label--hidden {
   visability: hidden;
+  border-bottom: 4px solid teal;
 }
 
 
 .form__input {
+  visibility: hidden;
 
 }

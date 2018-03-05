@@ -2,13 +2,23 @@
 
 
 .img--logo{
+  @include flexy ($dir:column){
+  }
+  max-width: 100%;
+  margin: 0 auto;
+
+
 
 }
 
 
 
 .img--frame {
+  @include flexy ($dir:column){
+  }
+  margin: 0 auto;
   width:165px;
+  max-width: 100%;
   border: 4px solid white;
   margin-top: 75px;
 
@@ -20,8 +30,8 @@
 
 
 .img--avatar{
-  @include flexy($just: right){
-    
+  @include flexy($dir:column,){
+    }
+    max-width: 100%;
+    margin: 0 auto;
   }
-
-}

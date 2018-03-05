@@ -1,12 +1,20 @@
 //Navigation:
 
 .nav {
-  @include flexy($dir:row, $just: space-between){
+  @include flexy($dir:column,){
 }
   &__item {
-
   text-align: center;
-  color: black;
   display: block;
+  color: black;
 }
+}
+.nav a {
+  list-style: none;
+  @include flexy ($dir:column,){
+  }
+  border-radius: 5px;
+  height: 30px;
+  width: 100%;
+  margin: 0 auto;
 }
