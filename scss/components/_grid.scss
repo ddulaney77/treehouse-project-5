@@ -2,7 +2,6 @@
 
 .container {
 @include flexy($dir:column){
-
 }
   width:90%;
   max-width: 100%;
@@ -11,7 +10,8 @@
 
 }
 .grid__row {
-  background-color: transparent;
+  @include flexy($dir:column){
+  }
   width:90%;
   max-width: 100%;
   margin-left: auto;
@@ -19,22 +19,17 @@
 
 }
 .grid__col--2{
-
-
   width:90%;
   max-width: 100%;
   margin-left: auto;
   margin-right: auto;
-
 }
 
 .grid__col--3{
-
   width:90%;
   max-width: 100%;
   margin-left: auto;
   margin-right: auto;
-
 }
 
 .grid__col--4{
@@ -43,7 +38,6 @@
   max-width: 100%;
   margin-left: auto;
   margin-right: auto;
-
 }
 
 .grid__col--5{

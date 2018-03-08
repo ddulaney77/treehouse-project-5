@@ -21,28 +21,33 @@ $font-stack-secondary: ;
 
 
 
-//breakpoint variables
+//media query breakpoint variables
 
-
-$break-xs : 480px;
-$break-s : 575px;
-$break-m : 768px;
-$break-l:  992px;
+$brkpoint-s : 1px;
+$brkpoint-m : 768px;
+$brkpoint-l:  1100px;
 
 //color variables
 
 $color-primary: #278da4;
-$color-secondary: #b13c69;
+$color-secondary: lightgrey;
 $color-accent: #eeea72;
+$white: #fff;
 
-
-
+//button radius
+$br-default: 5px;
 
 //button colors
-
 
 $lightskyblue: #87cefa;
 $lightgreen: #90ee90;
 $tomato:#ff6347;
 $lightsalmon: #ffa07a;
 $mediumpurple: #9370db;
+
+//ui-colors
+$ui-colors: (default: $lightskyblue,
+             sucess: $lightgreen,
+             error: $tomato,
+             warning: $lightsalmon,
+             info: $mediumpurple, );

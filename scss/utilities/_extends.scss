@@ -1,0 +1,24 @@
+
+%nav-item-disp {
+display:inline-block;
+margin: 0 auto;
+}
+
+%nav-item-link {
+  font-size: 18px;
+  font-weight: lighter;
+  padding: 8px;
+  border-bottom: 2px solid transparent;
+  Width: 80%;
+  max-width: 100%;
+  height: 30px;
+  text-decoration: none;
+  color: black;
+  text-transform: uppercase;
+  border-color: teal;
+}
+
+%nav-item-on {
+  border-color: teal;
+  color: black;
+}

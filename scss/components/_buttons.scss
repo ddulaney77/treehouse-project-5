@@ -1,15 +1,24 @@
 //Buttons:
-
 .btn {
+  @include bg-colors($ui-colors);
+display: block;
 width: 100%;
 padding: .8em;
-border-radius: 5px;
+border-radius: $br-default;
 border: none;
-font-size: 1em;
-color: white;
+font-size: 14px;
+color: $white;
 text-transform: uppercase;
 margin-bottom: 1em;
+  &:hover{
+    opacity: .70;
+  }
+  &:active {
+    opacity: initial;
+  }
 }
+
+
 .btn--default{
   background-color:$lightskyblue ;
   width: 100%;

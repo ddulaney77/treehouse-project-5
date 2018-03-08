@@ -10,20 +10,19 @@ box-sizing: border-box;
 
 
 //ul
-Ul.nav {
-  display: block;
-  list-style: none;
-  background-color: teal;
-  border-radius: 5px;
+Ul {
   height:30px;
   width: 100%;
+  margin-bottom: 200px;
 }
 
 
 
 //p
 p {
+  background-color: white;
   text-align: center;
   line-height: 25px;
+  margin: 0 auto;
   font-size: 16px;
 }

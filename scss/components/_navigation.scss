@@ -1,20 +1,20 @@
 //Navigation:
 
-.nav {
+.nav
+{
   @include flexy($dir:column,){
 }
-  &__item {
-  text-align: center;
-  display: block;
-  color: black;
+margin-top: 20px;
+margin-bottom: 30px;
+@include e(item) {
+  @extend %nav-item-disp;
+  a {
+    @extend %nav-item-link;
+    color:grey;
+      &:hover {
+        @extend %nav-item-on;
+      }
+
 }
 }
-.nav a {
-  list-style: none;
-  @include flexy ($dir:column,){
-  }
-  border-radius: 5px;
-  height: 30px;
-  width: 100%;
-  margin: 0 auto;
 }
