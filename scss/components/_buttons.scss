@@ -1,86 +1,37 @@
 //Buttons:
 .btn {
   @include bg-colors($ui-colors);
-display: block;
-width: 100%;
-padding: .8em;
-border-radius: $br-default;
-border: none;
-font-size: 14px;
-color: $white;
-text-transform: uppercase;
-margin-bottom: 1em;
-  &:hover{
-    opacity: .70;
-  }
-  &:active {
-    opacity: initial;
-  }
+  @extend %btn;
+&:hover{
+  opacity: .70;
+}
+&:active {
+  opacity: initial;
 }
 
 
-.btn--default{
+&--default{
+  @extend %btn;
   background-color:$lightskyblue ;
-  width: 100%;
-  padding: .8em;
-  border-radius: 5px;
-  border: none;
-  font-size: 1em;
-  color: white;
-  text-transform: uppercase;
-  margin-bottom: 1em;
 }
-.btn--success{
+&--success{
+  @extend %btn;
   background-color:$lightgreen ;
-  width: 100%;
-  padding: .8em;
-  border-radius: 5px;
-  border: none;
-  font-size: 1em;
-  color: white;
-  text-transform: uppercase;
-  margin-bottom: 1em;
 }
-.btn--error{
+&--error{
+  @extend %btn;
   background-color:$tomato;
-  width: 100%;
-  padding: .8em;
-  border-radius: 5px;
-  border: none;
-  font-size: 1em;
-  color: white;
-  text-transform: uppercase;
-  margin-bottom: 1em;
 }
-.btn--warning{
+&--warning{
+  @extend %btn;
   background-color: $lightsalmon;
-  width: 100%;
-  padding: .8em;
-  border-radius: 5px;
-  border: none;
-  font-size: 1em;
-  color: white;
-  text-transform: uppercase;
-  margin-bottom: 1em;
 }
-.btn--info{
+&--info{
+  @extend %btn;
   background-color: $mediumpurple;
-  width: 100%;
-  padding: .8em;
-  border-radius: 5px;
-  border: none;
-  font-size: 1em;
-  color: white;
-  text-transform: uppercase;
-  margin-bottom: 1em;
 }
-.theme__colors{
-  width: 100%;
-  padding: .8em;
-  border-radius: 5px;
-  border: none;
-  font-size: 1em;
-  color: white;
-  text-transform: uppercase;
-  margin-bottom: 1em;
+&--theme__colors{
+  @extend %btn;
+  background-color: white;
+}
 }

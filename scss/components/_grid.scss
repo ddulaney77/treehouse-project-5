@@ -1,118 +1,89 @@
-//Grid:
+//Grid: calculate grid columns
+@for $i from 1 through $g-col-count {
 
+$context: g-context($g-col-width, $g-col-count, $g-gutter-width);
+$target: ($g-col-width * $i) + ($g-gutter-width * ($i -1) );
+//generate column modifiers
+.grid__col--#{$i}{
+  width: percentage($target / $context);
+}
+}
 .container {
 @include flexy($dir:column){
 }
-  width:90%;
-  max-width: 100%;
-  margin-left: auto;
-  margin-right: auto;
+@extend %grid;
 
 }
 .grid__row {
   @include flexy($dir:column){
   }
-  width:90%;
-  max-width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-
+  @extend %btn;
+  @extend %grid;
 }
 .grid__col--2{
-  width:90%;
-  max-width: 100%;
-  margin-left: auto;
-  margin-right: auto;
+  @extend %btn;
+  @extend %grid;
 }
 
 .grid__col--3{
-  width:90%;
-  max-width: 100%;
-  margin-left: auto;
-  margin-right: auto;
+  @extend %btn;
+  @extend %grid;
 }
 
 .grid__col--4{
+    @extend %btn;
+    @extend %grid;
   background-color: $lightskyblue;
-  width:90%;
-  max-width: 100%;
-  margin-left: auto;
-  margin-right: auto;
+
 }
 
 .grid__col--5{
-  background-color: $lightgreen;
-  width:90%;
-  max-width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-
+  @extend %btn;
+  @extend %grid;
+    background-color: $lightgreen;
 }
 
 .grid__col--6 {
-  background-color: $color-primary;
-  width:90%;
-  max-width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-
+  @extend %btn;
+  @extend %grid;
+    background-color: $color-primary;
 }
 
 .grid__col--7{
-  background-color: $tomato;
-  width:90%;
-  max-width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-
+    @extend %btn;
+  @extend %grid;
+    background-color: $tomato;
 }
 
 .grid__col--8{
+  @extend %btn;
+  @extend %grid;
   background-color: $lightsalmon;
-  width:90%;
-  max-width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-
 }
 
 .grid__col--9{
-  width:90%;
-  max-width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-
+  @extend %btn;
+  @extend %grid;
 }
 
 .grid__col--10{
-  width:90%;
-  max-width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-
+  @extend %btn;
+  @extend %grid;
 }
 
 .grid__col--12{
-  width:90%;
-  max-width: 100%;
-  margin-left: auto;
-  margin-right: auto;
+  @extend %btn;
+  @extend %grid;
   background-color: $lightgreen;
 }
 
 .centered{
-  width:90%;
-  max-width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-
+  @extend %btn;
+  @extend %grid;
 }
 
 
 .theme__colors{
-  width:90%;
-  max-width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-
+  @extend %btn;
+  @extend %grid;
 }

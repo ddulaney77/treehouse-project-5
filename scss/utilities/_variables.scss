@@ -8,6 +8,8 @@
 
 
 //font variables
+$base__font-size: 16px;
+
 
 //font stack
 /*
@@ -27,18 +29,20 @@ $brkpoint-s : 1px;
 $brkpoint-m : 768px;
 $brkpoint-l:  1100px;
 
-//color variables
-
+//functional color variables
 $color-primary: #278da4;
 $color-secondary: lightgrey;
-$color-accent: #eeea72;
-$white: #fff;
 
-//button radius
+//descriptive color-secondary
+$white: #fff;
+$black: #000;
+$grey: #878787;
+
+//button border radius
 $br-default: 5px;
+$br-round: 50%;
 
 //button colors
-
 $lightskyblue: #87cefa;
 $lightgreen: #90ee90;
 $tomato:#ff6347;
@@ -51,3 +55,10 @@ $ui-colors: (default: $lightskyblue,
              error: $tomato,
              warning: $lightsalmon,
              info: $mediumpurple, );
+
+
+//grid
+$g-col-width: 65px;
+$g-gutter-width: 20px;
+$g-col-count: 12;
+$g-cont-max-w: 1050px;

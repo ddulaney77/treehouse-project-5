@@ -1,7 +1,7 @@
 
 @mixin bg-colors($map){
   @each $theme, $color in $map {
-  &-#($theme){
+  &-#{$theme}{
     background-color: $color;
   }
 }
@@ -49,7 +49,7 @@
 
 
 
-
+//center
 @mixin center($w) {
 width: $w;
 max-width:$max-width;
@@ -57,6 +57,7 @@ margin-left: auto;
 margin-right: auto;
 }
 
+//flexbox
 @mixin flexy($disp:flex, $dir: null, $wrap: null, $just: null,) {
     display: $disp;
     flex-direction: $dir;
