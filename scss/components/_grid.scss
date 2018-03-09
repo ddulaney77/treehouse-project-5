@@ -25,7 +25,7 @@ $target: ($g-col-width * $i) + ($g-gutter-width * ($i - 1) );
   @extend %grid;
 }
 
-.grid__col--3{
+.grid__col--3 {
   @extend %btn;
   @extend %grid;
   background-color: $mediumpurple;
@@ -52,7 +52,7 @@ $target: ($g-col-width * $i) + ($g-gutter-width * ($i - 1) );
 
 .grid__col--7{
     @extend %btn;
-  @extend %grid;
+    @extend %grid;
     background-color: $tomato;
 }
 
@@ -75,8 +75,7 @@ $target: ($g-col-width * $i) + ($g-gutter-width * ($i - 1) );
 .grid__col--12{
   @extend %btn;
   @extend %grid;
-  background-color: $lightgreen;
-
+  background-color:  $lightgreen;
 }
 
 .centered{
@@ -85,7 +84,7 @@ $target: ($g-col-width * $i) + ($g-gutter-width * ($i - 1) );
 }
 
 
-.theme__colors{
+ .theme__colors{
   @extend %btn;
   @extend %grid;
 }

@@ -351,14 +351,14 @@ p {
   margin-right: auto; }
 
 /*
-$font-stack-primary: "Helvetica Neue";
-$font-stack-secondary: ;
+$font-family-primary: "Helvetica Neue", Helvetica, Arial, sans-serif;i
+$font-family-secondary: ;
 */
 /*$context: g-context($g-col-width, $g-col-count, $g-gutter-width,);
 $target: ($g-col-width + $i) + ($g-gutter-width + ($i -1));*/
 .btn-default {
   background-color: #87cefa; }
-.btn-sucess {
+.btn-success {
   background-color: #90ee90; }
 .btn-error {
   background-color: #ff6347; }
@@ -381,9 +381,6 @@ $target: ($g-col-width + $i) + ($g-gutter-width + ($i -1));*/
 .btn--info {
   background-color: #9370db; }
 .btn--theme__colors {
-  background-color: white; }
-
-.btn__default theme__colors {
   background-color: white; }
 
 .form__label {

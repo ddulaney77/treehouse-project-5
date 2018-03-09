@@ -1,6 +1,6 @@
 //Buttons:
 .btn {
-  @include bg-colors($ui-colors);
+  @include btn-bg-colors($theme-colors);
   @extend %btn;
 &:hover{
   opacity: .70;
@@ -34,7 +34,4 @@
   @extend %btn;
   background-color: white;
 }
-}
-.btn__default theme__colors {
-  background-color: white;
 }

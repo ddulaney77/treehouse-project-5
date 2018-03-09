@@ -11,10 +11,10 @@
 $base__font-size: 16px;
 $base__line-height: 24px;
 
-//font stack
+//font family stack for main styles
 /*
-$font-stack-primary: "Helvetica Neue";
-$font-stack-secondary: ;
+$font-family-primary: "Helvetica Neue", Helvetica, Arial, sans-serif;i
+$font-family-secondary: ;
 */
 
 
@@ -23,24 +23,16 @@ $font-stack-secondary: ;
 
 
 
-//media query breakpoint variables
-
-$brkpoint-s : 1px;
+//media query breakpoint
+$brkpoint-s : 480px;
 $brkpoint-m : 768px;
 $brkpoint-l:  1100px;
 
-//functional color variables
-$color-primary: #278da4;
-$color-secondary: lightgrey;
 
 //descriptive color-secondary
 $white: #fff;
 $black: #000;
 $grey: #878787;
-
-//button border radius
-$br-default: 5px;
-$br-round: 50%;
 
 //button colors
 $lightskyblue: #87cefa;
@@ -49,13 +41,20 @@ $tomato:#ff6347;
 $lightsalmon: #ffa07a;
 $mediumpurple: #9370db;
 
-//ui-colors
-$ui-colors: (default: $lightskyblue,
-             sucess: $lightgreen,
-             error: $tomato,
-             warning: $lightsalmon,
-             info: $mediumpurple);
+//ui-colors theme colors
+$theme-colors: (default: $lightskyblue,
+                success: $lightgreen,
+                error:   $tomato,
+                warning: $lightsalmon,
+                info:    $mediumpurple);
 
+//functional color variables for main style
+  $color-primary: #278da4;
+  $color-secondary: lightgrey;
+
+//button border radius
+$br-default: 5px;
+$br-round: 50%;
 
 //grid
 $g-col-width: 65px;
