@@ -2,14 +2,14 @@
 
 
 .container {
-  display:flex;
-  flex-direction: column;
+  @include flexy;
+  //@include $center(90%);
   color: #343434;
   font-size: 1rem;
   line-height: 1.5em;
   margin: 0;
   //@media(min-width: $break-m){
-    //@include $center(90%);
+
     }
 
 
@@ -18,16 +18,28 @@
 
 }
 
-
+p a {
+  text-decoration: none;
+  color: $color-primary;
+}
 .blockquote{
+  font-size: 14px;
+  text-align: center;
+
+  border-left: 6px solid teal;
+  padding-left: 35px;
+  border-radius: $br-default;
+  margin-bottom: 2em;
 
 }
 
 
 .headline--primary {
-  font-size: 20px;
+  font-size: 16px;
   color: $color-primary;
   text-align: center;
+  padding: 5px;
+  margin-left: 10px;
 }
 // web fonts
 
@@ -37,5 +49,6 @@
 .headline--secondary{
   color: $color-secondary;
   text-align: left;
-
+  margin-top: 3em;
+  margin-bottom: 0;
 }

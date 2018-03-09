@@ -2,7 +2,7 @@
 @for $i from 1 through $g-col-count {
 
 $context: g-context($g-col-width, $g-col-count, $g-gutter-width);
-$target: ($g-col-width * $i) + ($g-gutter-width * ($i -1) );
+$target: ($g-col-width * $i) + ($g-gutter-width * ($i - 1) );
 //generate column modifiers
 .grid__col--#{$i}{
   width: percentage($target / $context);
@@ -28,6 +28,7 @@ $target: ($g-col-width * $i) + ($g-gutter-width * ($i -1) );
 .grid__col--3{
   @extend %btn;
   @extend %grid;
+  background-color: $mediumpurple;
 }
 
 .grid__col--4{
@@ -40,13 +41,13 @@ $target: ($g-col-width * $i) + ($g-gutter-width * ($i -1) );
 .grid__col--5{
   @extend %btn;
   @extend %grid;
-    background-color: $lightgreen;
+  background-color: $lightgreen;
 }
 
 .grid__col--6 {
   @extend %btn;
   @extend %grid;
-    background-color: $color-primary;
+  background-color: $color-primary;
 }
 
 .grid__col--7{
@@ -75,6 +76,7 @@ $target: ($g-col-width * $i) + ($g-gutter-width * ($i -1) );
   @extend %btn;
   @extend %grid;
   background-color: $lightgreen;
+
 }
 
 .centered{

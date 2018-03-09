@@ -18,9 +18,9 @@ font-weight: lighter;
     border-color: $color-primary;
   }
 }
-
-
-
+@include e(btn){
+  
+}
 
 .form__label--hidden {
   visability: hidden;

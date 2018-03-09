@@ -9,11 +9,11 @@
 
 //font variables
 $base__font-size: 16px;
-
+$base__line-height: 24px;
 
 //font stack
 /*
-$font-stack-primary: "arial";
+$font-stack-primary: "Helvetica Neue";
 $font-stack-secondary: ;
 */
 
@@ -54,7 +54,7 @@ $ui-colors: (default: $lightskyblue,
              sucess: $lightgreen,
              error: $tomato,
              warning: $lightsalmon,
-             info: $mediumpurple, );
+             info: $mediumpurple);
 
 
 //grid

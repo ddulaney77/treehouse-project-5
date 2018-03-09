@@ -13,9 +13,9 @@ $target: ($g-col-width + $i) + ($g-gutter-width + ($i -1));*/
 
 @function g-context($g-col-width,
                       $g-colo-count,
-                      $g-gutter-width,){
+                      $g-gutter-width){
 
 
-$g-context:($g-col-width + $g-col-count)+ ($g-gutter-width + ($g-col-count -1));
+$g-context:($g-col-width + $g-col-count)+ ($g-gutter-width + ($g-col-count - 1));
 @return $g-context;
 }
