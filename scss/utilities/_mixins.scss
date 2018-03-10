@@ -1,11 +1,10 @@
-
+//button background color
 @mixin btn-bg-colors($map){
   @each $theme, $color in $map {
   &-#{$theme}{
     background-color: $color;
   }
 }
-
 }
 
 
@@ -33,7 +32,6 @@
 
 
 
-
 //elements and modifiers
 @mixin e($element){
   &__#{$element} {
@@ -47,15 +45,13 @@
   }
 }
 
-
-
 //center
-@mixin center($w) {
+/*@mixin center($w) {
 width: $w;
 max-width:$max-width;
 margin-left: auto;
 margin-right: auto;
-}
+}*/
 
 //flexbox
 @mixin flexy($disp:flex, $dir: null, $wrap: null, $just: null,) {

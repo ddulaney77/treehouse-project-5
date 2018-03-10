@@ -30,8 +30,8 @@
   @extend %btn;
   background-color: $mediumpurple;
 }
-&--theme__colors{
+&--theme__colors {
   @extend %btn;
-  background-color: white;
+  //background-color: white;
 }
 }

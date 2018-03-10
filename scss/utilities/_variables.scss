@@ -11,17 +11,24 @@
 $base__font-size: 16px;
 $base__line-height: 24px;
 
-//font family stack for main styles
-/*
-$font-family-primary: "Helvetica Neue", Helvetica, Arial, sans-serif;i
-$font-family-secondary: ;
-*/
-
-
 //font path
+$font-url--google: "https://fonts.googleaips.com/css?family=Roboto:100,300,400,500,700,900";
+
+//font family stack for main styles
+$font-family--primary: "Helvetica Neue", Helvetica, Arial, sans-serif;
+$font-family--secondary: "Roboto", Helvetica, Arial, sans-serif;
 
 
+//font weights
+$font-weight-light: 300;
+$font-weight-base: 500;
+$font-weight-dark: 900;
 
+//font sizes
+$font-size--small: 14px;
+$font-size--base: 16px;
+$font-size--large: 20px;
+$font-size--xlrg: 24px;
 
 //media query breakpoint
 $brkpoint-s : 480px;
@@ -33,11 +40,16 @@ $brkpoint-l:  1100px;
 $white: #fff;
 $black: #000;
 $grey: #878787;
+$grey-palette: (
+                  light: lighten( grey, 15%),
+                  base: grey,
+                  dark: darken(grey, 20%)
+                  );
 
 //button colors
 $lightskyblue: #87cefa;
-$lightgreen: #90ee90;
-$tomato:#ff6347;
+$lightgreen:   #90ee90;
+$tomato:      #ff6347;
 $lightsalmon: #ffa07a;
 $mediumpurple: #9370db;
 
