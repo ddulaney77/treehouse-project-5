@@ -23,17 +23,20 @@
       @content;
 }
 }
-@else if $break == "large" {
+  @else if $break == "large" {
    @media(min-width:$brkpoint-l) {
       @content;
     }
   }
+
+@else{
+  @error "Whoops! No value could be retrieved for '#{$break}' "
+}
 }
 
+  //elements and modifiers
 
-
-//elements and modifiers
-@mixin e($element){
+  @mixin e($element){
   &__#{$element} {
     @content;
   }
@@ -45,13 +48,11 @@
   }
 }
 
-//center
-/*@mixin center($w) {
-width: $w;
-max-width:$max-width;
-margin-left: auto;
-margin-right: auto;
-}*/
+//generate column modifier classes
+&--#{$i}{
+  width: percentage($target / $context);
+}
+
 
 //flexbox
 @mixin flexy($disp:flex, $dir: null, $wrap: null, $just: null,) {
