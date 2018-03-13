@@ -6,10 +6,10 @@
 }
 
 
-//set context for fluid width
+/*set context for fluid width
 $context: g-context($g-col-width, $g-col-count, $g-gutter-width,);
 $target: ($g-col-width + $i) + ($g-gutter-width + ($i - 1 ));
-
+*/
 
 @function g-context($g-col-width,
                     $g-col-count,

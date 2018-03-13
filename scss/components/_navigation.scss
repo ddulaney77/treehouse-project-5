@@ -18,7 +18,10 @@ margin-bottom: 30px;
         @extend %nav-item-on;
         background-color: $color-primary;
       }
-
+@include mq(medium){
+@include flexy($dir:row, $just:space-between){
+}
+}
 }
 }
 }
