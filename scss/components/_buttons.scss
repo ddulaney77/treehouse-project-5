@@ -8,29 +8,7 @@
 &:active {
   opacity: initial;
 }
-
-
-&--default{
-  @extend %btn;
-  background-color:$lightskyblue ;
 }
-&--success{
-  @extend %btn;
-  background-color:$lightgreen ;
-}
-&--error{
-  @extend %btn;
-  background-color:$tomato;
-}
-&--warning{
-  @extend %btn;
-  background-color: $lightsalmon;
-}
-&--info{
-  @extend %btn;
-  background-color: $mediumpurple;
-}
-&--theme__colors {
-  @extend %btn;
-}
+@include mq(medium){
+  display: inline-block;
 }

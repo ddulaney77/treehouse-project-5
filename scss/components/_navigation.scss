@@ -12,13 +12,12 @@ margin-bottom: 30px;
 
   a {
     @extend %nav-item-link;
-    color:grey;
+    color: palette(grey);
 
       &:hover {
         @extend %nav-item-on;
         background-color: $color-primary;
         @include mq(small){
-          
         }
       }
     }

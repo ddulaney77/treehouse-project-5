@@ -312,16 +312,17 @@ p {
   font-size: 16px;
   color: grey; }
 
-.centered, .grid, .blockquote {
+.centered, .img--logo, .img--frame, .img--avatar, .container, .grid, .blockquote {
   float: none;
   margin-left: auto;
   margin-right: auto; }
 
 .nav__item {
   display: inline-block;
-  margin: 0 auto; }
+  margin: 0 12px; }
 
 .nav__item a {
+  display: block;
   font-size: 18px;
   font-weight: lighter;
   padding: 8px;
@@ -329,14 +330,13 @@ p {
   max-width: 100%;
   height: 30px;
   text-decoration: none;
-  color: black;
   text-transform: uppercase;
   border-color: teal; }
 
 .nav__item a:hover {
-  color: white; }
+  color: black; }
 
-.btn, .btn--default, .btn--success, .btn--error, .btn--warning, .btn--info, .btn--theme__colors, .form__btn, .grid__row, .grid__col--2, .grid__col--3, .grid__col--4, .grid__col--5, .grid__col--6, .grid__col--7, .grid__col--8, .grid__col--9, .grid__col--10, .grid__col--12, .centered, .grid, .blockquote, .theme__colors {
+.btn, .form__btn, .grid__row, .grid__col--2, .grid__col--3, .grid__col--4, .grid__col--5, .grid__col--6, .grid__col--7, .grid__col--8, .grid__col--9, .grid__col--10, .grid__col--12, .centered, .img--logo, .img--frame, .img--avatar, .container, .grid, .blockquote, .theme__colors {
   display: block;
   width: 70%;
   padding: 15px 30px;
@@ -349,7 +349,7 @@ p {
   margin-left: 0;
   margin-right: 0; }
 
-.container, .grid__row, .grid__col--2, .grid__col--3, .grid__col--4, .grid__col--5, .grid__col--6, .grid__col--7, .grid__col--8, .grid__col--9, .grid__col--10, .grid__col--12, .centered, .grid, .blockquote, .theme__colors {
+.grid__row, .grid__col--2, .grid__col--3, .grid__col--4, .grid__col--5, .grid__col--6, .grid__col--7, .grid__col--8, .grid__col--9, .grid__col--10, .grid__col--12, .centered, .img--logo, .img--frame, .img--avatar, .container, .grid, .blockquote, .theme__colors {
   width: 90%;
   max-width: 100%;
   margin-left: auto;
@@ -368,20 +368,6 @@ p {
 $context: g-context($g-col-width, $g-col-count, $g-gutter-width,);
 $target: ($g-col-width + $i) + ($g-gutter-width + ($i - 1 ));
 */
-.btn-default {
-  background-color: #87cefa; }
-.btn-success {
-  background-color: #90ee90; }
-.btn-error {
-  background-color: #ff6347; }
-.btn-warning {
-  background-color: #ffa07a; }
-.btn-info {
-  background-color: #9370db; }
-.btn:hover {
-  opacity: .70; }
-.btn:active {
-  opacity: initial; }
 .btn--default {
   background-color: #87cefa; }
 .btn--success {
@@ -392,7 +378,13 @@ $target: ($g-col-width + $i) + ($g-gutter-width + ($i - 1 ));
   background-color: #ffa07a; }
 .btn--info {
   background-color: #9370db; }
+.btn:hover {
+  opacity: .70; }
+.btn:active {
+  opacity: initial; }
 
+@media (min-width: 769px) {
+  display: inline-block; }
 .form__label {
   display: block;
   margin-bottom: 10px; }
@@ -448,16 +440,14 @@ $context: g-context($g-col-width, $g-col-count, $g-gutter-width) !global;
 $target: ($g-col-width * $i) + ($g-gutter-width * ($i - 1) );
 */
 .container {
-  display: flex;
-  flex-direction: column; }
+  width: 80%; }
 
 .grid {
-  width: 90%; }
-
-[class*="grid__col--"] > {
-  width: 100%;
+  width: 90%;
   margin-top: 10px;
   margin-bottom: 10px; }
+  [class*="grid__col--"] > .grid {
+    width: 100%; }
 
 .grid__row {
   display: flex;
@@ -488,7 +478,7 @@ $target: ($g-col-width * $i) + ($g-gutter-width * ($i - 1) );
   margin-top: 20px;
   margin-bottom: 30px; }
   .nav__item a {
-    color: grey; }
+    color: palette(grey); }
     .nav__item a:hover {
       background-color: #278da4; }
 
@@ -497,8 +487,10 @@ $target: ($g-col-width * $i) + ($g-gutter-width * ($i - 1) );
     justify-content: flex-end; } }
 .container {
   display: flex;
-  color: #343434;
+  flex-direction: column;
+  color: palette(grey, dark);
   font-size: 1rem;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   line-height: 1.5em;
   margin: 0; }
 
@@ -522,14 +514,15 @@ p a {
   color: #278da4;
   text-align: center;
   padding: 5px;
-  margin-left: 10px; }
+  margin-left: 10px;
+  margin-bottom: 20px; }
 
 .headline--secondary {
   font-size: 16px;
   color: lightgrey;
   text-align: left;
   margin-top: 3em;
-  margin-bottom: 0; }
+  margin-bottom: 10px; }
 
 .img--logo {
   margin: 0 auto; }
@@ -537,7 +530,7 @@ p a {
 .img--frame {
   margin: 0 auto;
   width: 400px;
-  border: 4px solid white;
+  border: 4px solid lightgrey;
   margin-top: 75px; }
 
 .img--avatar {

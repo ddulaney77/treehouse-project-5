@@ -68,8 +68,21 @@ $theme-colors: (default: $lightskyblue,
 $br-default: 5px;
 $br-round: 50%;
 
-//grid
+//grid widths
 $g-col-width: 65px;
 $g-gutter-width: 20px;
 $g-col-count: 12;
 $g-cont-max-w: 1050px;
+
+
+
+
+$grid-colors: (
+col--3: lighten($mediumpurple, 20%),
+col--4: lighten($lightskyblue, 10%),
+col--5: lighten($lightgreen, 10%),
+//col--6:
+col--7: lighten($tomato, 20%),
+col--8: lighten($lightsalmon, 20%),
+//col--12: lighten($)
+);

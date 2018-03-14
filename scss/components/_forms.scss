@@ -18,7 +18,8 @@ font-weight: $font-weight-light;
     border-color: $color-primary;
   }
 }
-@include e(btn){@extend %btn;
+@include e(btn){
+  @extend %btn;
   background-color: $color-primary;
 
 }

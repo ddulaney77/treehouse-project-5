@@ -2,12 +2,15 @@
 
 
 .container {
-  @include flexy;
-  color: #343434;
+  @include flexy($dir:column);
+  @include mq(medium){
+  }
+  color: palette(grey, dark);
   font-size: 1rem;
+  font-family: $font-family--primary;
   line-height: 1.5em;
   margin: 0;
-  //@media(min-width: $break-m){
+
 
     }
 
@@ -41,6 +44,7 @@ p a {
   text-align: center;
   padding: 5px;
   margin-left: 10px;
+  margin-bottom: 20px;
 }
 // web fonts
 
@@ -52,5 +56,5 @@ p a {
   color: $color-secondary;
   text-align: left;
   margin-top: 3em;
-  margin-bottom: 0;
+  margin-bottom: 10px;
 }

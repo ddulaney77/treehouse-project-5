@@ -15,20 +15,22 @@ $target: ($g-col-width * $i) + ($g-gutter-width * ($i - 1) );
 
 
 .container {
-@include flexy($dir:column){
+  width: 80%;
+@extend .centered;
 }
-@extend %grid;
 
-}
+
+
+
 .grid {
   @extend %clearfix;
   @extend .centered;
   width: 90%;
-}
 
 //make nested gird container 100%
-[class*="grid__col--"] >  {
+[class*="grid__col--"] > & {
   width:100%;
+}
   @include mq(small){
   }
     margin-top: 10px;
@@ -44,6 +46,7 @@ $target: ($g-col-width * $i) + ($g-gutter-width * ($i - 1) );
   @media (min-widht: 110px){
   $max-width: $g-cont-max-w;
 }
+
 
 
 
