@@ -43,10 +43,18 @@
   }
 }
 
-//generate column modifier classes
+//grid columns
+@mixin g-columns {
+  @for $i from 1 through $g-col-count {
+  $context: g-context($g-col-width, $g-col-count, $g-gutter-width) !global;
+  $target: ($g-col-width * $i) + ($g-gutter-width * ($i - 1) );
 
 
-
+  &--#{$i}{
+  width: percentage($target / $context);
+}
+}
+}
 //flexbox
 @mixin flexy($disp:flex, $dir: null, $wrap: null, $just: null,) {
     display: $disp;

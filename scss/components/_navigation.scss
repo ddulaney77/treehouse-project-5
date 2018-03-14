@@ -1,8 +1,9 @@
 //Navigation:
 
-.nav
-{
-  @include flexy($dir:column,){
+.nav{
+  @include mq(medium){
+  }
+  @mixin flexy($dir:row,$just: space-between){
 }
 margin-top: 20px;
 margin-bottom: 30px;
@@ -13,15 +14,19 @@ margin-bottom: 30px;
     @extend %nav-item-link;
     color:grey;
 
-
       &:hover {
         @extend %nav-item-on;
         background-color: $color-primary;
+        @include mq(small){
+          
+        }
       }
-@include mq(medium){
-@include flexy($dir:row, $just:space-between){
+    }
+  }
 }
-}
-}
+
+  @include mq(large){
+    a {
+    justify-content: flex-end;
 }
 }

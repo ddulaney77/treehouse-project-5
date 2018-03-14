@@ -336,7 +336,7 @@ p {
 .nav__item a:hover {
   color: white; }
 
-.btn, .btn--default, .btn--success, .btn--error, .btn--warning, .btn--info, .btn--theme__colors, [class*="grid__col--"] > .grid__col--2, [class*="grid__col--"] > .grid__col--3, [class*="grid__col--"] > .grid__col--4, [class*="grid__col--"] > .grid__col--5, [class*="grid__col--"] > .grid__col--6, [class*="grid__col--"] > .grid__col--7, [class*="grid__col--"] > .grid__col--8, [class*="grid__col--"] > .grid__col--9, [class*="grid__col--"] > .grid__col--10, [class*="grid__col--"] > .grid__col--12, [class*="grid__col--"] > .centered, [class*="grid__col--"] > .grid, [class*="grid__col--"] > .blockquote, [class*="grid__col--"] > .theme__colors {
+.btn, .btn--default, .btn--success, .btn--error, .btn--warning, .btn--info, .btn--theme__colors, .form__btn, .grid__row, .grid__col--2, .grid__col--3, .grid__col--4, .grid__col--5, .grid__col--6, .grid__col--7, .grid__col--8, .grid__col--9, .grid__col--10, .grid__col--12, .centered, .grid, .blockquote, .theme__colors {
   display: block;
   width: 70%;
   padding: 15px 30px;
@@ -349,7 +349,7 @@ p {
   margin-left: 0;
   margin-right: 0; }
 
-.container, [class*="grid__col--"] > .grid__col--2, [class*="grid__col--"] > .grid__col--3, [class*="grid__col--"] > .grid__col--4, [class*="grid__col--"] > .grid__col--5, [class*="grid__col--"] > .grid__col--6, [class*="grid__col--"] > .grid__col--7, [class*="grid__col--"] > .grid__col--8, [class*="grid__col--"] > .grid__col--9, [class*="grid__col--"] > .grid__col--10, [class*="grid__col--"] > .grid__col--12, [class*="grid__col--"] > .centered, [class*="grid__col--"] > .grid, [class*="grid__col--"] > .blockquote, [class*="grid__col--"] > .theme__colors {
+.container, .grid__row, .grid__col--2, .grid__col--3, .grid__col--4, .grid__col--5, .grid__col--6, .grid__col--7, .grid__col--8, .grid__col--9, .grid__col--10, .grid__col--12, .centered, .grid, .blockquote, .theme__colors {
   width: 90%;
   max-width: 100%;
   margin-left: auto;
@@ -408,6 +408,8 @@ $target: ($g-col-width + $i) + ($g-gutter-width + ($i - 1 ));
   font-weight: 300; }
   .form__input:focus {
     border-color: #278da4; }
+.form__btn {
+  background-color: #278da4; }
 .form .form__label--hidden {
   visability: hidden;
   border-bottom: 4px solid #278da4; }
@@ -417,39 +419,34 @@ $target: ($g-col-width + $i) + ($g-gutter-width + ($i - 1 ));
 @media (min-width: 769px) {
   .grid__col--1 {
     width: 6.5%; }
-
   .grid__col--2 {
     width: 15%; }
-
   .grid__col--3 {
     width: 23.5%; }
-
   .grid__col--4 {
     width: 32%; }
-
   .grid__col--5 {
     width: 40.5%; }
-
   .grid__col--6 {
     width: 49%; }
-
   .grid__col--7 {
     width: 57.5%; }
-
   .grid__col--8 {
     width: 66%; }
-
   .grid__col--9 {
     width: 74.5%; }
-
   .grid__col--10 {
     width: 83%; }
-
   .grid__col--11 {
     width: 91.5%; }
-
   .grid__col--12 {
     width: 100%; } }
+
+/*@for $i from 1 through $g-col-count {
+//set context for fluid width
+$context: g-context($g-col-width, $g-col-count, $g-gutter-width) !global;
+$target: ($g-col-width * $i) + ($g-gutter-width * ($i - 1) );
+*/
 .container {
   display: flex;
   flex-direction: column; }
@@ -459,46 +456,45 @@ $target: ($g-col-width + $i) + ($g-gutter-width + ($i - 1 ));
 
 [class*="grid__col--"] > {
   width: 100%;
-  /*.grid__row {
-    @include flexy($dir:column){
-    }
-    @extend %btn;
-    @extend %grid;
-  }*/ }
-  @media (min-width: 480px) and (max-width: 768px) {
-    [class*="grid__col--"] > {
-      margin-top: 10px;
-      margin-bottom: 10px; } }
-  [class*="grid__col--"] > .grid__col--3 {
-    background-color: #9370db; }
-  [class*="grid__col--"] > .grid__col--4 {
-    background-color: #87cefa; }
-  [class*="grid__col--"] > .grid__col--5 {
-    background-color: #90ee90; }
-  [class*="grid__col--"] > .grid__col--6 {
-    background-color: #278da4; }
-  [class*="grid__col--"] > .grid__col--7 {
-    background-color: #ff6347; }
-  [class*="grid__col--"] > .grid__col--8 {
-    background-color: #ffa07a; }
-  [class*="grid__col--"] > .grid__col--12 {
-    background-color: #90ee90; }
+  margin-top: 10px;
+  margin-bottom: 10px; }
+
+.grid__row {
+  display: flex;
+  flex-direction: column; }
+
+.grid__col--3 {
+  background-color: #9370db; }
+
+.grid__col--4 {
+  background-color: #87cefa; }
+
+.grid__col--5 {
+  background-color: #90ee90; }
+
+.grid__col--6 {
+  background-color: #278da4; }
+
+.grid__col--7 {
+  background-color: #ff6347; }
+
+.grid__col--8 {
+  background-color: #ffa07a; }
+
+.grid__col--12 {
+  background-color: #90ee90; }
 
 .nav {
-  display: flex;
-  flex-direction: column;
   margin-top: 20px;
   margin-bottom: 30px; }
   .nav__item a {
     color: grey; }
     .nav__item a:hover {
       background-color: #278da4; }
-    @media (min-width: 769px) {
-      .nav__item a {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between; } }
 
+@media (min-width: 1100px) {
+  a {
+    justify-content: flex-end; } }
 .container {
   display: flex;
   color: #343434;
