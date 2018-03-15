@@ -17,13 +17,13 @@
         background-color: $color-primary;
         }
         @include mq(medium){
-  @include flexy($dir:row,$just:space-between){
-  }
+  //@include flexy($dir:row,$just:space-between){
+  //}
 }
   @include mq(large){
   display: inline-block;
-@include flexy($dir:row,$just:flex-end){
-  }
+//@include flexy($dir:row,$just:flex-end){
+  //}
 }
 }
 }

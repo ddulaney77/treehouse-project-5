@@ -516,17 +516,9 @@ $target: ($g-col-width + $i) + ($g-gutter-width + ($i - 1 ));
     display: block; }
   .nav__item:hover {
     background-color: #278da4; }
-  @media (min-width: 769px) {
-    .nav__item {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between; } }
   @media (min-width: 1100px) {
     .nav__item {
-      display: inline-block;
-      display: flex;
-      flex-direction: row;
-      justify-content: flex-end; } }
+      display: inline-block; } }
 
 .container {
   color: palette(grey, dark);
@@ -534,11 +526,6 @@ $target: ($g-col-width + $i) + ($g-gutter-width + ($i - 1 ));
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   line-height: 1.5em;
   margin: 0; }
-  @media (min-width: 769px) {
-    .container {
-      display: flex;
-      flex-direction: row;
-      justify-content: spcae-between; } }
 
 .link {
   text-decoration: none;

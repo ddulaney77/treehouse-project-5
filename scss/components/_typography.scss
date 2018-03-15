@@ -9,8 +9,6 @@
   line-height: 1.5em;
   margin: 0;
   @include mq(medium){
-  @include flexy($dir:row,$just:spcae-between){
-    }
   }
 }
 

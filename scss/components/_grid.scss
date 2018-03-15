@@ -8,14 +8,12 @@
 .container {
   width: 80%;
 @extend .centered;
-@include mq(large){
-
 //set max-width grid container
   @include mq(large){
   $max-width: $g-cont-max-w;
 }
 }
-}
+
 .grid__row {
   @extend %btn;
   @extend %grid;
