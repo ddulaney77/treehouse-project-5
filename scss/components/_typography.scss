@@ -3,16 +3,16 @@
 
 .container {
   @extend .centered;
-  @include mq(medium){
-  }
-  @include flexy($dir:column);
-
   color: palette(grey, dark);
   font-size: 1rem;
   font-family: $font-family--primary;
   line-height: 1.5em;
   margin: 0;
+  @include mq(medium){
+  @include flexy($dir:row,$just:spcae-between){
     }
+  }
+}
 
 
 

@@ -5,11 +5,12 @@
 
   @include mq(large){
     display: inline-block;
-  }
-&:hover{
+
+      &:hover{
   opacity: .70;
-}
-&:active {
+  }
+    &:active {
   opacity: initial;
+}
 }
 }

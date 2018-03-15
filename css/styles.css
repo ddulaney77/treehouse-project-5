@@ -414,11 +414,11 @@ $target: ($g-col-width + $i) + ($g-gutter-width + ($i - 1 ));
   background-color: #9370db; }
 @media (min-width: 1100px) {
   .btn {
-    display: inline-block; } }
-.btn:hover {
-  opacity: .70; }
-.btn:active {
-  opacity: initial; }
+    display: inline-block; }
+    .btn:hover {
+      opacity: .70; }
+    .btn:active {
+      opacity: initial; } }
 
 .form__label {
   display: block;
@@ -437,6 +437,11 @@ $target: ($g-col-width + $i) + ($g-gutter-width + ($i - 1 ));
       border-color: #278da4; }
     .form__label__input__btn {
       background-color: #278da4; }
+      @media (min-width: 769px) {
+        .form__label__input__btn {
+          display: flex;
+          flex-direction: row;
+          justify-content: flex-end; } }
 
 .form__label--hidden {
   visability: hidden;
@@ -529,13 +534,16 @@ $target: ($g-col-width + $i) + ($g-gutter-width + ($i - 1 ));
 @media (min-width: 1100px) {
   display: inline-block; }
 .container {
-  display: flex;
-  flex-direction: column;
   color: palette(grey, dark);
   font-size: 1rem;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   line-height: 1.5em;
   margin: 0; }
+  @media (min-width: 769px) {
+    .container {
+      display: flex;
+      flex-direction: row;
+      justify-content: spcae-between; } }
 
 .link {
   text-decoration: none;
