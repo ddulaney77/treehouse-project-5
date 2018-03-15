@@ -77,12 +77,12 @@ $g-cont-max-w: 1050px;
 
 
 
-$grid-colors: (
-col--3: lighten($mediumpurple, 20%),
-col--4: lighten($lightskyblue, 10%),
-col--5: lighten($lightgreen, 10%),
-//col--6:
-col--7: lighten($tomato, 20%),
-col--8: lighten($lightsalmon, 20%),
-//col--12: lighten($)
+$grid-theme-colors:(
+  3: lighten($mediumpurple, 10%),
+  4: lighten($lightskyblue, 10%),
+  5: lighten($lightgreen, 5%),
+  6: lighten($color-primary, 10%),
+  7: lighten($tomato, 10%),
+  8: lighten($lightsalmon, 10%),
+  12: darken($lightgreen, 10%)
 );

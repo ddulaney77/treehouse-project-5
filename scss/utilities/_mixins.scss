@@ -56,7 +56,7 @@
 }
 }
 //flexbox
-@mixin flexy($disp:flex, $dir: null, $wrap: null, $just: null,) {
+@mixin flexy($disp:flex, $dir: null, $wrap: null, $just: null) {
     display: $disp;
     flex-direction: $dir;
     flex-wrap: $wrap;

@@ -5,122 +5,39 @@
 }
 }
 
-/*@for $i from 1 through $g-col-count {
-//set context for fluid width
-$context: g-context($g-col-width, $g-col-count, $g-gutter-width) !global;
-$target: ($g-col-width * $i) + ($g-gutter-width * ($i - 1) );
-*/
-
-
-
-
 .container {
   width: 80%;
 @extend .centered;
 }
-
-
-
-
-.grid {
-  @extend %clearfix;
-  @extend .centered;
-  width: 90%;
-
-//make nested gird container 100%
-[class*="grid__col--"] > & {
-  width:100%;
-}
   @include mq(small){
-  }
     margin-top: 10px;
     margin-bottom: 10px;
-  }
-
   @include mq(medium){
 
   }
-
+}
 
 //set max-width grid container
   @media (min-widht: 110px){
   $max-width: $g-cont-max-w;
 }
-
-
-
-
 .grid__row {
   @include flexy($dir:column){
+}
+  @extend %btn;
+  @extend %grid;
+}
+
+
+[class^="grid__col--"],
+.centered,
+.theme__colors {
+  @extend %btn;
+  @extend %grid;
+}
+
+@each $num, $color in $grid-theme-colors {
+  .grid__col--#{$num}.theme__colors {
+    background-color: $color;
   }
-  @extend %btn;
-  @extend %grid;
-}
-.grid__col--2{
-  @extend %btn;
-  @extend %grid;
-}
-
-.grid__col--3 {
-  @extend %btn;
-  @extend %grid;
-  background-color: $mediumpurple;
-}
-
-.grid__col--4{
-    @extend %btn;
-    @extend %grid;
-  background-color: $lightskyblue;
-
-}
-
-.grid__col--5{
-  @extend %btn;
-  @extend %grid;
-  background-color: $lightgreen;
-}
-
-.grid__col--6 {
-  @extend %btn;
-  @extend %grid;
-  background-color: $color-primary;
-}
-
-.grid__col--7{
-    @extend %btn;
-    @extend %grid;
-    background-color: $tomato;
-}
-
-.grid__col--8{
-  @extend %btn;
-  @extend %grid;
-  background-color: $lightsalmon;
-}
-
-.grid__col--9{
-  @extend %btn;
-  @extend %grid;
-}
-
-.grid__col--10{
-  @extend %btn;
-  @extend %grid;
-}
-
-.grid__col--12{
-  @extend %btn;
-  @extend %grid;
-  background-color:  $lightgreen;
-}
-
-.centered {
-  @extend %btn;
-  @extend %grid;
-}
-
-
- .theme__colors {
-  @extend %btn;
-  @extend %grid;
 }

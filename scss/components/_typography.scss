@@ -2,16 +2,16 @@
 
 
 .container {
-  @include flexy($dir:column);
+  @extend .centered;
   @include mq(medium){
   }
+  @include flexy($dir:column);
+
   color: palette(grey, dark);
   font-size: 1rem;
   font-family: $font-family--primary;
   line-height: 1.5em;
   margin: 0;
-
-
     }
 
 
@@ -19,42 +19,36 @@
 .link{
   text-decoration: none;
   color: $color-primary;
-
 }
 
 p a {
   text-decoration: none;
   color: $color-primary;
 }
+
 .blockquote{
   @extend .centered;
   font-size: $font-size--small;
-
   border-left: 6px solid $color-primary;
   padding-left: 35px;
   border-radius: $br-default;
   margin-bottom: 2em;
-
 }
 
 
-.headline--primary {
-  font-size: $font-size--xlrg;
-  color: $color-primary;
-  text-align: center;
-  padding: 5px;
-  margin-left: 10px;
-  margin-bottom: 20px;
+.headline-primary {
+    font-size: 42px;
+    font-weight: lighter;
+    color: teal;
+    text-align: center;
+    padding: 5px;
+    margin-left: 10px;
+    margin-bottom: 60px;
 }
-// web fonts
-
-
-
-
-.headline--secondary {
-  font-size: $font-size--base;
-  color: $color-secondary;
+.headline-secondary {
+  font-size: 24px;
+  color: grey;
   text-align: left;
   margin-top: 3em;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
