@@ -437,11 +437,6 @@ $target: ($g-col-width + $i) + ($g-gutter-width + ($i - 1 ));
       border-color: #278da4; }
     .form__label__input__btn {
       background-color: #278da4; }
-      @media (min-width: 769px) {
-        .form__label__input__btn {
-          display: flex;
-          flex-direction: row;
-          justify-content: flex-end; } }
 
 .form__label--hidden {
   visability: hidden;
@@ -479,12 +474,6 @@ $target: ($g-col-width + $i) + ($g-gutter-width + ($i - 1 ));
 .container {
   width: 80%; }
 
-@media (min-width: 1100px) {
-  .grid__row {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between; } }
-
 @media (min-width: 480px) and (max-width: 768px) {
   [class^="grid__col--"] {
     margin-top: 10px;
@@ -519,9 +508,6 @@ $target: ($g-col-width + $i) + ($g-gutter-width + ($i - 1 ));
   background-color: #64e764; }
 
 .nav {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
   margin-top: 20px;
   margin-bottom: 30px; }
   .nav__item a {
@@ -530,9 +516,18 @@ $target: ($g-col-width + $i) + ($g-gutter-width + ($i - 1 ));
     display: block; }
   .nav__item:hover {
     background-color: #278da4; }
+  @media (min-width: 769px) {
+    .nav__item {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between; } }
+  @media (min-width: 1100px) {
+    .nav__item {
+      display: inline-block;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end; } }
 
-@media (min-width: 1100px) {
-  display: inline-block; }
 .container {
   color: palette(grey, dark);
   font-size: 1rem;

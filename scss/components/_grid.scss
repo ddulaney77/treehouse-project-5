@@ -20,11 +20,8 @@
   @extend %btn;
   @extend %grid;
   @include mq(large){
-  @include flexy($dir:row,$just:space-between) {
   }
 }
-}
-
 
 [class^="grid__col--"] {
   @include mq(small){
@@ -48,7 +45,6 @@
   @extend %btn;
   @extend %grid;
 }
-
 @each $num, $color in $grid-theme-colors {
   .grid__col--#{$num}.theme__colors {
     background-color: $color;
