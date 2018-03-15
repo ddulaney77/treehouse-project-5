@@ -1,7 +1,7 @@
 //button background color
 @mixin btn-bg-colors($map){
   @each $theme, $color in $map {
-  &--#{$theme}{
+    &--#{$theme}{
     background-color: $color;
   }
 }
@@ -32,13 +32,13 @@
 
   //elements and modifiers
   @mixin e($element){
-    &__#{$element} {
-    @content;
+      &__#{$element} {
+        @content;
   }
 }
 
 @mixin m($modifier){
-  &--#{$modifier} {
+    &--#{$modifier} {
     @content;
   }
 }
