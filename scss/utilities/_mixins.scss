@@ -32,7 +32,7 @@
 
   //elements and modifiers
   @mixin e($element){
-  &__#{$element} {
+    &__#{$element} {
     @content;
   }
 }
@@ -49,12 +49,20 @@
   $context: g-context($g-col-width, $g-col-count, $g-gutter-width) !global;
   $target: ($g-col-width * $i) + ($g-gutter-width * ($i - 1) );
 
-
   &--#{$i}{
   width: percentage($target / $context);
 }
 }
 }
+
+/*@mixin doubly($margin: 1em){
+  & + & {
+    margin-left: $margin;
+    @content;
+
+  }
+}
+*/
 //flexbox
 @mixin flexy($disp:flex, $dir: null, $wrap: null, $just: null) {
     display: $disp;

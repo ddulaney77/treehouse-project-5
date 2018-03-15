@@ -1,33 +1,31 @@
 //Navigation:
 
 .nav{
-  @include mq(medium){
+  @include flexy($dir:row,$just:flex-end);
+    margin-top: 20px;
+    margin-bottom: 30px;
   }
-  @mixin flexy($dir:row,$just: space-between){
-}
-margin-top: 20px;
-margin-bottom: 30px;
   @include e(item) {
-  @extend %nav-item-disp;
-
-  a {
-    @extend %nav-item-link;
-    color: palette(grey);
+  @extend %nav-item-horiz;
+      a {
+        text-align: center;
+        @extend %nav-item-link;
+        color: palette(grey);
+        @include mq(small);
+        display: block;
+      }
+@include mq(large){
+  display: inline-block;
+}
 
       &:hover {
         @extend %nav-item-on;
         background-color: $color-primary;
-        @include mq(small){
         }
       }
-    }
-  }
-}
-
-  @include mq(large){
-    a {
+    
 
 
 
-}
-}
+  //@include mq(large){
+    //a {

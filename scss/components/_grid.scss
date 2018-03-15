@@ -8,25 +8,44 @@
 .container {
   width: 80%;
 @extend .centered;
+@include mq(large){
 }
-  @include mq(small){
+}
+  /*@include mq(small){
     margin-top: 10px;
     margin-bottom: 10px;
   @include mq(medium){
 
   }
 }
-
+*/
 //set max-width grid container
-  @media (min-widht: 110px){
+  @include mq(large){
   $max-width: $g-cont-max-w;
 }
 .grid__row {
-  @include flexy($dir:column){
+  @include mq(large){
+    @include flexy($dir:row, $just:space-between) {
+  }
 }
   @extend %btn;
   @extend %grid;
 }
+
+[class^="grid__col--"] {
+  @include mq(small){
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+}
+  @include mq(medium){
+    float:left;
+    padding-left: 10px;
+    padding-right: 10px;
+    //&:last-of-type {
+      //float:right;
+    }
+
 
 
 [class^="grid__col--"],
