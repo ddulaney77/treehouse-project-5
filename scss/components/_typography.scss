@@ -3,7 +3,8 @@
 
 .container {
   @extend .centered;
-  color: palette(grey, dark);
+  color: $grey;
+  font-weight: $font-weight-dark;
   font-size: 1rem;
   font-family: $font-family--primary;
   line-height: 1.5em;
@@ -19,11 +20,6 @@
   color: $color-primary;
 }
 
-p a {
-  text-decoration: none;
-  color: $color-primary;
-}
-
 .blockquote{
   @extend .centered;
   font-size: $font-size--small;
@@ -34,19 +30,16 @@ p a {
 }
 
 
-.headline-primary {
-    font-size: 42px;
-    font-weight: lighter;
-    color: teal;
-    text-align: center;
-    padding: 5px;
-    margin-left: 10px;
-    margin-bottom: 60px;
+.headline--primary {
+  font-family: $font-family--primary;
+  @extend %hdln-prim;
+
 }
-.headline-secondary {
-  font-size: 24px;
-  color: grey;
-  text-align: left;
-  margin-top: 3em;
-  margin-bottom: 20px;
+
+
+
+.headline--secondary{
+
+    @extend %hdln-sec;
+
 }

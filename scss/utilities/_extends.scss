@@ -35,8 +35,8 @@ margin: 0 12px;
   border-radius: 5px;
   border: none;
   font-size: 14px;
-  color: white;
-  text-transform: uppercase;
+  //color: white;
+  //text-transform: uppercase;
   margin-bottom: 1em;
   margin-left: 0;
   margin-right: 0;
@@ -56,8 +56,8 @@ margin: 0 12px;
   }
 }
 
-/*%hdln-prim {
-  font-size: 42px;
+%hdln-prim {
+  font-size: 28px;
   font-weight: lighter;
   color: teal;
   text-align: center;
@@ -67,10 +67,9 @@ margin: 0 12px;
 }
 
 %hdln-sec {
-  font-size: 24px;
-  color: grey;
-  text-align: left;
+  font-size: 18px;
+  color:grey;
+  text-align: center;
   margin-top: 3em;
   margin-bottom: 10px;
 }
-*/

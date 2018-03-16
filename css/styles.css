@@ -335,7 +335,7 @@ p {
 .nav__item:hover {
   color: black; }
 
-.btn, .form__label__input__btn, .grid__row, [class^="grid__col--"],
+.btn, .grid__row, [class^="grid__col--"],
 .centered,
 .img--logo,
 .img--frame,
@@ -349,8 +349,6 @@ p {
   border-radius: 5px;
   border: none;
   font-size: 14px;
-  color: white;
-  text-transform: uppercase;
   margin-bottom: 1em;
   margin-left: 0;
   margin-right: 0; }
@@ -368,24 +366,22 @@ p {
   margin-left: auto;
   margin-right: auto; }
 
-/*%hdln-prim {
-  font-size: 42px;
+.headline--primary {
+  font-size: 28px;
   font-weight: lighter;
   color: teal;
   text-align: center;
   padding: 5px;
   margin-left: 10px;
-  margin-bottom: 20px;
-}
+  margin-bottom: 20px; }
 
-%hdln-sec {
-  font-size: 24px;
+.headline--secondary {
+  font-size: 18px;
   color: grey;
-  text-align: left;
+  text-align: center;
   margin-top: 3em;
-  margin-bottom: 10px;
-}
-*/
+  margin-bottom: 10px; }
+
 /*@mixin doubly($margin: 1em){
   & + & {
     margin-left: $margin;
@@ -521,17 +517,14 @@ $target: ($g-col-width + $i) + ($g-gutter-width + ($i - 1 ));
       display: inline-block; } }
 
 .container {
-  color: palette(grey, dark);
+  color: #878787;
+  font-weight: 900;
   font-size: 1rem;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   line-height: 1.5em;
   margin: 0; }
 
 .link {
-  text-decoration: none;
-  color: #278da4; }
-
-p a {
   text-decoration: none;
   color: #278da4; }
 
@@ -542,21 +535,8 @@ p a {
   border-radius: 5px;
   margin-bottom: 2em; }
 
-.headline-primary {
-  font-size: 42px;
-  font-weight: lighter;
-  color: teal;
-  text-align: center;
-  padding: 5px;
-  margin-left: 10px;
-  margin-bottom: 60px; }
-
-.headline-secondary {
-  font-size: 24px;
-  color: grey;
-  text-align: left;
-  margin-top: 3em;
-  margin-bottom: 20px; }
+.headline--primary {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
 
 .img--logo {
   margin: 0 auto; }

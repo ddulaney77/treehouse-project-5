@@ -15,9 +15,9 @@ color: $black;
 font-weight: $font-weight-light;
     &:focus {
     border-color: $color-primary;
-  }
+    }
 @include e(btn){
-  @extend %btn;
+  //@extend %btn;
   background-color: $color-primary;
   @include mq(medium){
 }
