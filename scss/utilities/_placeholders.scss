@@ -10,6 +10,8 @@ width: 100%;
 //image styles
 %img {
   display: flex;
+  width:300px;
+  height:200px;
   max-width: 100%;
   @extend .centered;
 

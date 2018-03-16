@@ -20,6 +20,7 @@ font-weight: $font-weight-light;
   //@extend %btn;
   background-color: $color-primary;
   @include mq(medium){
+    
 }
   }
 }

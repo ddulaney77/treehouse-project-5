@@ -2,28 +2,26 @@
 
 .nav{
     margin-top: 20px;
-    margin-bottom: 2em;
-  @include e(item) {
-  @extend %nav-item-disp;
-      a {
-        font-family: $font-family--secondary;
-        text-align: center;
-        color: $grey;
-        @extend %nav-item-link;
+    margin-bottom: 1em;
+    @extend %nav-item-disp;
 
-        &:hover {
-          @extend %nav-item-on;
-          background-color: $color-primary;
+    @include e(item) {
+        a {
+        @extend %nav-item-link;
+        font-family: $font-family--secondary;
+        color: $grey;
+        text-align: center;
+            &:hover {
+              @extend %nav-item-on;
+              background-color: $color-primary;
+            }
           }
 
-        @include mq(medium){
-          margin-bottom: 30px;
-  @include flexy($dir:row,$just:space-between){
-  }
-  @include mq(large){
-@include flexy($just:flex-end){
-  }
-}
+      @include mq(medium){
+        a{
+          @include flexy(row,flex-end){
+            }
+
 }
 }
 }
