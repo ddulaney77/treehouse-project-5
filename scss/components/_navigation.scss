@@ -1,36 +1,30 @@
 //Navigation:
 
 .nav{
-  font-family: $font-family--secondary;
     margin-top: 20px;
-    margin-bottom: 30px;
+    margin-bottom: 2em;
   @include e(item) {
   @extend %nav-item-disp;
       a {
+        font-family: $font-family--secondary;
         text-align: center;
+        color: $grey;
         @extend %nav-item-link;
-        color: palette(grey);
-        @include mq(small);
-        display: block;
-      }
-      &:hover {
-        @extend %nav-item-on;
-        background-color: $color-primary;
-        }
+
+        &:hover {
+          @extend %nav-item-on;
+          background-color: $color-primary;
+          }
+
         @include mq(medium){
-  //@include flexy($dir:row,$just:space-between){
-  //}
-}
+          margin-bottom: 30px;
+  @include flexy($dir:row,$just:space-between){
+  }
   @include mq(large){
-  display: inline-block;
-//@include flexy($dir:row,$just:flex-end){
-  //}
+@include flexy($just:flex-end){
+  }
 }
 }
 }
-
-
-
-
-  //@include mq(large){
-    //a {
+}
+}
