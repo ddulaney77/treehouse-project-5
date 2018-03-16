@@ -377,8 +377,9 @@ p {
 
 .headline--secondary {
   font-size: 18px;
+  font-style: italic;
   color: grey;
-  text-align: center;
+  text-align: left;
   margin-top: 3em;
   margin-bottom: 10px; }
 
@@ -504,6 +505,7 @@ $target: ($g-col-width + $i) + ($g-gutter-width + ($i - 1 ));
   background-color: #64e764; }
 
 .nav {
+  font-family: "Roboto", Helvetica, Arial, sans-serif;
   margin-top: 20px;
   margin-bottom: 30px; }
   .nav__item a {
@@ -529,6 +531,7 @@ $target: ($g-col-width + $i) + ($g-gutter-width + ($i - 1 ));
   color: #278da4; }
 
 .blockquote {
+  font-family: "Roboto", Helvetica, Arial, sans-serif;
   font-size: 14px;
   border-left: 6px solid #278da4;
   padding-left: 35px;
@@ -537,6 +540,10 @@ $target: ($g-col-width + $i) + ($g-gutter-width + ($i - 1 ));
 
 .headline--primary {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
+
+.headline--secondary {
+  font-family: "Roboto", Helvetica, Arial, sans-serif;
+  font-weight: 300; }
 
 .img--logo {
   margin: 0 auto; }

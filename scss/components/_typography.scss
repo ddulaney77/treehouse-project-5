@@ -22,6 +22,7 @@
 
 .blockquote{
   @extend .centered;
+  font-family: $font-family--secondary;
   font-size: $font-size--small;
   border-left: 6px solid $color-primary;
   padding-left: 35px;
@@ -39,7 +40,7 @@
 
 
 .headline--secondary{
-
+  font-family: $font-family--secondary;
+  font-weight: $font-weight-light;
     @extend %hdln-sec;
-
 }

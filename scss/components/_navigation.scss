@@ -1,6 +1,7 @@
 //Navigation:
 
 .nav{
+  font-family: $font-family--secondary;
     margin-top: 20px;
     margin-bottom: 30px;
   @include e(item) {
