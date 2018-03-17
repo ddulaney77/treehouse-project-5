@@ -17,9 +17,11 @@
             }
           }
 
-      @include mq(large){
-        @include flexy($dir:row,$just:flex-end){
-          
+      @include mq(medium){
+        a{
+          display: inline-block;
+          @include flexy($dir:row,$just:space-between){
+        }
         }
 
 }

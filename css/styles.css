@@ -524,11 +524,12 @@ $target: ($g-col-width + $i) + ($g-gutter-width + ($i - 1 ));
     text-align: center; }
     .nav__item a:hover {
       background-color: #278da4; }
-  @media (min-width: 1100px) {
-    .nav__item {
+  @media (min-width: 769px) {
+    .nav__item a {
+      display: inline-block;
       display: flex;
       flex-direction: row;
-      justify-content: flex-end; } }
+      justify-content: space-between; } }
 
 .container {
   color: #878787;
