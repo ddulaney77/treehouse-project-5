@@ -16,7 +16,7 @@
       }
     }
   @else if $break == "medium" {
-    @media(min-width:$brkpoint-m + 1) {
+    @media(min-width: $brkpoint-m) {
       @content;
 }
 }
@@ -25,10 +25,12 @@
       @content;
     }
   }
-@else {
+  @else {
   @error "Whoops! No value could be retrieved for '#{$break}' ";
 }
 }
+
+
 
   //elements and modifiers
   @mixin e($element){

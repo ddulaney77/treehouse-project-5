@@ -1,8 +1,8 @@
 //Navigation:
 
 .nav{
-    margin-top: 20px;
-    margin-bottom: 1em;
+    margin-top: 10px;
+    margin-bottom: 20px;
 
     @include e(item) {
       @extend %nav-item-disp;
@@ -11,6 +11,7 @@
         font-family: $font-family--secondary;
         color: $grey;
         text-align: center;
+
             &:hover {
               @extend %nav-item-on;
               background-color: $color-primary;

@@ -20,7 +20,7 @@ font-weight: $font-weight-light;
   //@extend %btn;
   background-color: $color-primary;
   @include mq(medium){
-    
+
 }
   }
 }
@@ -31,9 +31,13 @@ font-weight: $font-weight-light;
 .form__label--hidden {
   visability: hidden;
   border-bottom: 4px solid $color-primary;
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 
 
 .form__input {
+  margin-top: 8px;
+  margin-bottom: 8px;
   visibility: hidden;
 }
