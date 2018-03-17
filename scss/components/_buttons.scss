@@ -2,8 +2,6 @@
 .btn {
   @include btn-bg-colors($theme-colors);
   @extend %btn;
-  @include mq(medium){
-    @include flexy($dir:row,$just:spcae-between)}
 
       &:hover{
         opacity: .70;
@@ -11,4 +9,16 @@
     &:active {
       opacity: initial;
     }
+}
+
+
+.centered {
+& .grid__col--12 {
+@include mq(medium){
+@include flexy($dir:row,$just:space-between);
+[class*='btn--']{
+  margin: auto 15px;
+}
+}
+}
 }

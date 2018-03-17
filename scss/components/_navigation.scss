@@ -22,9 +22,12 @@
         a{
           display: inline-block;
           @include flexy($dir:row,$just:space-between){
-        }
-        }
-
+}
+ @include mq(medium){
+  @include flexy($dir:row,$just:flex-end){
+}
+}
+}
 }
 }
 }

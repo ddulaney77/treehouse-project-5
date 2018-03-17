@@ -398,15 +398,18 @@ $target: ($g-col-width + $i) + ($g-gutter-width + ($i - 1 ));
   background-color: #ffa07a; }
 .btn--info {
   background-color: #9370db; }
-@media (min-width: 768px) {
-  .btn {
-    display: flex;
-    flex-direction: row;
-    justify-content: spcae-between; } }
 .btn:hover {
   opacity: .70; }
 .btn:active {
   opacity: initial; }
+
+@media (min-width: 768px) {
+  .centered .grid__col--12, .img--logo .grid__col--12, .img--frame .grid__col--12, .img--avatar .grid__col--12, .container .grid__col--12, .blockquote .grid__col--12 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; }
+    .centered .grid__col--12 [class*='btn--'], .img--logo .grid__col--12 [class*='btn--'], .img--frame .grid__col--12 [class*='btn--'], .img--avatar .grid__col--12 [class*='btn--'], .container .grid__col--12 [class*='btn--'], .blockquote .grid__col--12 [class*='btn--'] {
+      margin: auto 15px; } }
 
 .form__label {
   display: block;
@@ -508,13 +511,22 @@ $target: ($g-col-width + $i) + ($g-gutter-width + ($i - 1 ));
       display: flex;
       flex-direction: row;
       justify-content: space-between; } }
+  @media (min-width: 768px) and (min-width: 768px) {
+    .nav__item a {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end; } }
 
 .container {
+  width: 100%;
   color: #878787;
   font-weight: 500;
   font-size: 1rem;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   line-height: 1.5em; }
+  @media (min-width: 768px) {
+    .container {
+      width: 80%; } }
 
 .link {
   text-decoration: none;
