@@ -19,28 +19,13 @@
 .grid__row {
   @extend %btn;
   @extend %grid;
-  @include mq(medium){
-    @include flexy($dir:row, $just: space-between){
-      
+  @include mq(large){
+  @include flexy($dir:row,$just:space-between){
+
     }
   }
   }
 
-/*[class^="grid__col--"] {
-  @include mq(small){
-    margin-top: 10px;
-    margin-bottom: 10px;
-  @include mq(medium){
-    float:left;
-    padding-left: 10px;
-    padding-right: 10px;
-      &:last-of-type {
-        float:right;
-    }
-}
-}
-}
-*/
 
 
 [class^="grid__col--"],

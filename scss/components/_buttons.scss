@@ -2,13 +2,13 @@
 .btn {
   @include btn-bg-colors($theme-colors);
   @extend %btn;
-  @include mq(large){
-    display: inline-block;
+  @include mq(medium){
+    @include flexy($dir:row,$just:spcae-between)}
+
       &:hover{
         opacity: .70;
-  }
+      }
     &:active {
       opacity: initial;
-}
-}
+    }
 }
