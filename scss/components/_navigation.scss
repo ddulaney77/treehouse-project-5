@@ -3,9 +3,9 @@
 .nav{
     margin-top: 20px;
     margin-bottom: 1em;
-    @extend %nav-item-disp;
 
     @include e(item) {
+      @extend %nav-item-disp;
         a {
         @extend %nav-item-link;
         font-family: $font-family--secondary;
@@ -17,12 +17,11 @@
             }
           }
 
-      @include mq(medium){
-        a{
-          @include flexy(row,flex-end){
-            }
+      @include mq(large){
+        @include flexy($dir:row,$just:flex-end){
+          
+        }
 
-}
 }
 }
 }

@@ -318,7 +318,7 @@ p {
   margin-left: auto;
   margin-right: auto; }
 
-.nav {
+.nav__item {
   display: inline-block;
   margin: 0 12px; }
 
@@ -473,18 +473,27 @@ $target: ($g-col-width + $i) + ($g-gutter-width + ($i - 1 ));
 .container {
   width: 80%; }
 
-@media (min-width: 480px) and (max-width: 768px) {
-  [class^="grid__col--"] {
-    margin-top: 10px;
-    margin-bottom: 10px; } }
-  @media (min-width: 480px) and (max-width: 768px) and (min-width: 769px) {
-    [class^="grid__col--"] {
-      float: left;
-      padding-left: 10px;
-      padding-right: 10px; }
-      [class^="grid__col--"]:last-of-type {
-        float: right; } }
+@media (min-width: 769px) {
+  .grid__row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; } }
 
+/*[class^="grid__col--"] {
+  @include mq(small){
+    margin-top: 10px;
+    margin-bottom: 10px;
+  @include mq(medium){
+    float:left;
+    padding-left: 10px;
+    padding-right: 10px;
+      &:last-of-type {
+        float:right;
+    }
+}
+}
+}
+*/
 .grid__col--3.theme__colors {
   background-color: #b299e5; }
 
@@ -515,10 +524,11 @@ $target: ($g-col-width + $i) + ($g-gutter-width + ($i - 1 ));
     text-align: center; }
     .nav__item a:hover {
       background-color: #278da4; }
-  @media (min-width: 769px) {
-    .nav__item a {
-      display: row;
-      flex-direction: flex-end; } }
+  @media (min-width: 1100px) {
+    .nav__item {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end; } }
 
 .container {
   color: #878787;
