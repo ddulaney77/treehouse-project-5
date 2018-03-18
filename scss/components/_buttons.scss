@@ -2,15 +2,20 @@
 .btn {
   @include btn-bg-colors($theme-colors);
   @extend %btn;
-
       &:hover{
         opacity: .70;
-      }
-    &:active {
-      opacity: initial;
-    }
+
+        &:active {
+          opacity: initial;
+
+}
+}
 }
 
+[class^="btn--"]{
+  color:white;
+  text-transform: uppercase;
+}
 
 .centered {
 & .grid__col--12 {

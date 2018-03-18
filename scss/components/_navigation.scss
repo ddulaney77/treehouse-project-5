@@ -10,7 +10,6 @@
         @extend %nav-item-link;
         font-family: $font-family--secondary;
         color: $grey;
-        text-align: center;
 
             &:hover {
               @extend %nav-item-on;

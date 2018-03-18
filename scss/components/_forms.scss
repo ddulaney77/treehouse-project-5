@@ -17,7 +17,6 @@ font-weight: $font-weight-light;
     border-color: $color-primary;
     }
 @include e(btn){
-  //@extend %btn;
   background-color: $color-primary;
   @include mq(medium){
 
@@ -29,6 +28,8 @@ font-weight: $font-weight-light;
 
 
 .form__label--hidden {
+  display: block;
+  width:100%;
   visability: hidden;
   border-bottom: 4px solid $color-primary;
   margin-top: 15px;
@@ -37,6 +38,8 @@ font-weight: $font-weight-light;
 
 
 .form__input {
+  display: block;
+  width:100%;
   margin-top: 8px;
   margin-bottom: 8px;
   visibility: hidden;

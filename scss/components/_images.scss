@@ -7,9 +7,18 @@
 
 .img--frame {
   @extend %img;
+  border: 2px solid lightgrey;
+
 }
 
 .img--avatar{
   @extend %img;
+  width: 150px;
+  height:150px;
     max-width: 100%;
+    @include mq(medium);
+    @include flexy($dir:row){
+      width:200px;
+
+    }
   }
