@@ -2,23 +2,31 @@
 
 
 .img--logo{
+  display:block;
   @extend %img;
 }
 
 .img--frame {
   @extend %img;
   border: 2px solid lightgrey;
-
+  width:200px;
+  height:100px;
+  @include mq(medium);
+  width:300px;
+  height:200px;
+  @include flexy($dir:row){
+  }
 }
+
 
 .img--avatar{
   @extend %img;
-  width: 150px;
-  height:150px;
+  width: 100px;
+  height:100px;
     max-width: 100%;
     @include mq(medium);
-    @include flexy($dir:row){
-      width:200px;
-
-    }
+    width:200px;
+    height:200px;
+  //@include flexy($dir:row){
+    //}
   }

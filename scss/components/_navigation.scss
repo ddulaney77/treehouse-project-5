@@ -3,12 +3,19 @@
 .nav{
     margin-top: 20px;
     margin-bottom: 30px;
+    line-height: 12px;
+    @include mq(small){
+    @include flexy($dir:column){
+    }
+    }
 
     @include e(item) {
-      @extend %nav-item-disp;
+    @extend %nav-item-disp;
         a {
         @extend %nav-item-link;
         font-family: $font-family--secondary;
+        font-size: 24px;
+        line-height: 16px;
         color: $grey;
 
             &:hover {
@@ -19,12 +26,13 @@
 
       @include mq(medium){
         a{
-          display: inline-block;
           @include flexy($dir:row,$just:space-between){
-}
- @include mq(medium){
-  @include flexy($dir:row,$just:flex-end){
-}
+          }
+ @include mq(large){
+        a{
+     @include flexy($dir:row,$just:flex-end){
+        }
+   }
 }
 }
 }
