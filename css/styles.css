@@ -303,7 +303,6 @@ template {
 Ul {
   text-decoration: none;
   list-style-type: none;
-  width: 100%;
   margin: 0 auto; }
 
 p {
@@ -327,6 +326,7 @@ p {
   font-weight: lighter;
   padding: 10px;
   Width: 100%;
+  max-width: 100%;
   text-decoration: none; }
 
 .nav__item a:hover {
@@ -506,7 +506,7 @@ $target: ($g-col-width + $i) + ($g-gutter-width + ($i - 1 ));
   background-color: #64e764; }
 
 .nav {
-  margin-top: 35px;
+  margin-top: 40px;
   margin-bottom: 30px;
   line-height: 12px; }
   @media (min-width: 480px) and (max-width: 768px) {
@@ -514,6 +514,7 @@ $target: ($g-col-width + $i) + ($g-gutter-width + ($i - 1 ));
       display: flex;
       flex-direction: column; } }
   .nav__item a {
+    text-align: center;
     font-family: "Roboto", Helvetica, Arial, sans-serif;
     color: #878787;
     width: 100%; }
@@ -562,7 +563,7 @@ $target: ($g-col-width + $i) + ($g-gutter-width + ($i - 1 ));
 .img--logo {
   height: 100px;
   width: 200px;
-  display: inline-block; }
+  display: block; }
 
 .img--frame {
   border: 2px solid lightgrey;

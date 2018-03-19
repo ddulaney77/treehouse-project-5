@@ -4,8 +4,9 @@
 .img--logo{
   height:100px;
   width:200px;
-  display:inline-block;
+  display:block;
   @extend %img;
+  @extend .centered;
 }
 
 .img--frame {

@@ -1,7 +1,7 @@
 //Navigation:
 
 .nav{
-    margin-top: 35px;
+    margin-top: 40px;
     margin-bottom: 30px;
     line-height: 12px;
     @include mq(small){
@@ -12,6 +12,7 @@
     @include e(item) {
     @extend %nav-item-disp;
         a {
+          text-align:center;
         @extend %nav-item-link;
         font-family:$font-family--secondary;
         color: $grey;
