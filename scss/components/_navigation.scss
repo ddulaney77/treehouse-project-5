@@ -1,7 +1,7 @@
 //Navigation:
 
 .nav{
-    margin-top: 20px;
+    margin-top: 35px;
     margin-bottom: 30px;
     line-height: 12px;
     @include mq(small){
@@ -13,27 +13,24 @@
     @extend %nav-item-disp;
         a {
         @extend %nav-item-link;
-        font-family: $font-family--secondary;
-        font-size: 24px;
-        line-height: 16px;
+        font-family:$font-family--secondary;
         color: $grey;
+        width:100%;
 
             &:hover {
               @extend %nav-item-on;
               background-color: $color-primary;
+              border-radius: 6px;
+              color:white;
             }
           }
 
       @include mq(medium){
         a{
-          @include flexy($dir:row,$just:space-between){
+          font-size: 26px;
+          @include flexy($dir:row,$just:flex-end){
           }
- @include mq(large){
-        a{
-     @include flexy($dir:row,$just:flex-end){
-        }
-   }
-}
+
 }
 }
 }

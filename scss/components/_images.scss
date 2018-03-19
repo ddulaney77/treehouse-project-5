@@ -2,7 +2,9 @@
 
 
 .img--logo{
-  display:block;
+  height:100px;
+  width:200px;
+  display:inline-block;
   @extend %img;
 }
 
